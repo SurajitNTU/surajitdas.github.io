@@ -1,56 +1,93 @@
-<!-- surajitntu@github.io -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Surajit Das's Website</title>
+    <title>Surajit Das - Learn from the Best</title>
     <style>
         body {
+            margin: 0;
             font-family: Arial, sans-serif;
             background-color: #f9f9f9;
-            padding: 20px;
         }
-        h1 {
-            color: #4CAF50;
-            text-align: center;
-        }
-        p {
-            color: #555;
-            text-align: center;
-        }
-        .container {
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
             display: flex;
-            flex-direction: column;
-            align-items: flex-start;
+            justify-content: space-between;
+            align-items: center;
         }
-        section {
+        header nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        .hero {
+            text-align: center;
+            background-color: #f4f4f4;
+            padding: 50px 20px;
+        }
+        .hero h1 {
+            font-size: 2.5em;
+            color: #333;
+        }
+        .hero p {
+            color: #666;
             margin: 20px 0;
         }
-        h2 {
-            color: #333;
+        .hero .buttons {
+            margin-top: 20px;
+        }
+        .hero .buttons a {
+            padding: 10px 20px;
+            margin: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+        .hero .buttons .primary {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .hero .buttons .secondary {
+            background-color: white;
+            color: #4CAF50;
+            border: 2px solid #4CAF50;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
         }
     </style>
 </head>
 <body>
-    <h1>Surajit Das</h1>
-    <p>Website hosted on GitHub Pages.</p>
+    <header>
+        <div class="logo">
+            <h2>Surajit Das</h2>
+        </div>
+        <nav>
+            <a href="#course-offerings">Course Offerings</a>
+            <a href="#research">Research</a>
+            <a href="#publications">Publications</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-    <div class="container">
-        <section id="about">
-            <h2>About</h2>
-            <p>Information about Surajit Das.</p>
-        </section>
+    <section class="hero">
+        <h1>Learn from the Best with Surajit Das</h1>
+        <p>Explore groundbreaking research and top-notch courses to advance your career.</p>
+        <div class="buttons">
+            <a href="#course-offerings" class="primary">View Course Catalog</a>
+            <a href="#about" class="secondary">Learn More</a>
+        </div>
+    </section>
 
-        <section id="research">
-            <h2>Research Work</h2>
-            <p>Details about research work.</p>
-        </section>
-
-        <section id="blog">
-            <h2>Blog</h2>
-            <p>Latest blog posts.</p>
-        </section>
-    </div>
+    <footer>
+        <p>© 2024 Surajit Das. All rights reserved.</p>
+    </footer>
 </body>
 </html>
